@@ -1,4 +1,4 @@
-# game_of_thrones
+# Game of Thrones
 
 
 Hello, and thanks for checking out my first project! This has been an extremely rewarding journey, and I'm happy to share what I have learned so far. 
