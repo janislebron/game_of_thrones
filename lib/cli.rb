@@ -10,11 +10,16 @@ class CLI
 
     def input
         #get user input
+        puts "Ready to venture through Fire and Ice?"
         puts "Enter the name of the character you'd like more information on."
         user_input = gets.strip.downcase
         if user_input = #names of characters
             then 
+        elsif
+            then 
         else
+            #goodbye in High Valryian
+            puts "Geros ilas."
 
         end 
 

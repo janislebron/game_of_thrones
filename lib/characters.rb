@@ -1,5 +1,5 @@
 class Characters
-    attr_accessor :gender :aliases
+    attr_accessor :gender :aliases :culture
     @@all = []
     
     #keep track of character attributes
@@ -7,8 +7,6 @@ class Characters
 
     def initialize
         #character attributes go here
-        @gender = gender
-        @aliases = aliases
         @@all << self
     end
 
