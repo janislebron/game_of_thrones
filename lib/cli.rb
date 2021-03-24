@@ -11,7 +11,7 @@ class CLI
     def input
         #get user input
         puts "Ready to venture through Fire and Ice?"
-        puts "Enter in Kessa, or yes, to learn more."
+        puts "Enter in Kessa, to learn more, or goodbye, to read the series instead."
         user_input = gets.strip.downcase
         if user_input = "kessa" || user_input = "yes"
             then
@@ -21,13 +21,14 @@ class CLI
             character_details
             sleep(1)
             input
-        else
+
+        else user_input = "goodbye"
             #goodbye in High Valryian
             puts "Geros ilas, may all 7 Gods keep you safe."
         end 
     end 
 
-        def character_selction
+    def character_selction
         #choose character        
         index = gets.strip.to_i - 1
 
@@ -40,9 +41,9 @@ class CLI
 
         character_choice = Characters.all[index]
         character_details(character_choice)
-        end
+    end
 
-        def character_details(aliases)
+    def character_details
             #show info about character
             sleep(1)
             puts "\n"
@@ -51,14 +52,14 @@ class CLI
             puts "\nculture:" + culture
             puts "\nboooks:" + instructions
             
-        end
+    end
 
-        def show_all_characters
+    def show_all_characters
             #display all characters
             Characters.all.each.with_index(1) do |aliases, index|
                 puts "#{index}. #{aliases}."
             end
-        end
+    end
 
 
 end
