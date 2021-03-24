@@ -1,12 +1,13 @@
 class Characters
-    attr_accessor :gender :aliases :culture
+    attr_accessor :aliases :gender :culture :books
     @@all = []
     
     #keep track of character attributes
     #save all characters
 
-    def initialize
+    def initialize(aliases:)
         #character attributes go here
+        @aliases = aliases
         @@all << self
     end
 
