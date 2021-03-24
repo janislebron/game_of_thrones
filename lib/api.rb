@@ -1,6 +1,6 @@
 class API
     #make calls to API
-    def people
+    def self.people
         url = "http://www.https://anapioficeandfire.com/api/characters"
         uri = URI(url)
         response = Net::HTTP.get.uri
@@ -13,6 +13,7 @@ class API
             character_new.gender = hash_of_characters["gender"]
             character_new.aliases = hash_of_characters["aliases"]
             character_new.culture = hash_of_characters["culture"]
+            character_new.books = hash_of_characters["books"]
         end
 
         # gender
