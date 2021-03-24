@@ -42,9 +42,15 @@ class CLI
         character_details(character_choice)
         end
 
-        def character_details
+        def character_details(aliases)
             #show info about character
-
+            sleep(1)
+            puts "\n"
+            puts aliases
+            puts "\ngender:" + gender
+            puts "\nculture:" + culture
+            puts "\nboooks:" + instructions
+            
         end
 
         def show_all_characters
